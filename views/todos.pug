@@ -1,0 +1,6 @@
+form(action="/todos", method='GET')
+  input(type="text", name='q', value=q, class="form-control" placeholder="Name item")
+  button.btn.btn-primary.ml-2 Search
+ul
+  each item in list
+    li= item.work
